@@ -1,0 +1,12 @@
+#define GROUP_PIN(g,p) ((g<<16) | (p))
+
+/ {
+	winter_led@0 {
+		compatible = "winter_leddrv";
+		pin = <GROUP_PIN(3, 1)>;
+	};
+
+	winter_led@1 {
+		compatible = "winter_leddrv";
+		pin = <GROUP_PIN(5, 8)>;
+	};};
